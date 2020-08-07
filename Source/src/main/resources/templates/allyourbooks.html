@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<center><head>
+    <meta charset="UTF-8">
+    <title>All books</title>
+</head>
+<body bgcolor="#FFFFE0">
+<p>  Your books:</p>
+
+<ul th:each="publication : ${publications}">
+    <li th:text="${publication.titel}"></li>
+    <li th:text="${publication.author}"></li>
+    <li th:text="${publication.year}"></li>
+    <li th:text="${publication.publisher}"></li>
+</ul>
+
+
+</body></center>
+</html>
